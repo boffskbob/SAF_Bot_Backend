@@ -1,0 +1,6 @@
+@SAF_BOT_HostAddress = http://localhost:5227
+
+GET {{SAF_BOT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
