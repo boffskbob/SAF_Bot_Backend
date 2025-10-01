@@ -1,4 +1,11 @@
+using Pinecone;
+using DotNetEnv;
+
 var builder = WebApplication.CreateBuilder(args);
+
+Env.Load();
+var apiKey = Environment.GetEnvironmentVariable("PINECONE_API_KEY");
+var pinecone = new PineconeClient(apiKey);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
